@@ -43,12 +43,33 @@ is not.
 
 ## Running it
 
+Node is pinned in `.nvmrc` (Vite 8 needs `^20.19` or `>=22.12`).
+
 ```bash
 npm install
 npm run dev      # http://localhost:5180
 npm run build    # -> dist/
 npm run lint     # oxlint
+npm run preview  # serve the built dist/
 ```
+
+## Deploying
+
+`dist/` is a plain static bundle — any static host will serve it. The live site
+runs on nginx at `axg.prai.co`; that vhost is kept in `deploy/nginx.conf`, so the
+caching rules and the SPA fallback are versioned rather than living only on the
+box.
+
+```bash
+npm run deploy              # build, rsync to the host, verify, curl the URL
+DRY_RUN=1 npm run deploy    # show what would change, upload nothing
+```
+
+The script compares by checksum, so a rebuild does not re-upload all 16 MB, and
+after uploading it md5s every deployed file against the local build and fails if
+a single one differs. Host and paths are overridable: `AXG_HOST`, `AXG_DEST`,
+`AXG_URL`. It needs key-based ssh access to the host — no credentials are stored
+in the repo.
 
 ## Layout
 
