@@ -1,0 +1,69 @@
+.footer {
+  background: #0B0B0D;
+  color: #EDEDEE;
+  padding: clamp(60px, 8vw, 110px) 0 40px;
+  margin-top: 0;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, 1fr);
+  gap: clamp(30px, 5vw, 70px);
+}
+.footer__logo { font-family: var(--f-display); font-weight: 900; font-size: 2rem; letter-spacing: 0.02em; }
+.footer__tag { margin-top: 1rem; max-width: 42ch; color: #9A9AA0; font-size: var(--step--1); }
+.footer__badge {
+  margin-top: 1.4rem;
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  color: #B8B8BC;
+}
+.footer__badge span {
+  color: #EDEDEE;
+  font-weight: 700; margin-right: 6px;
+}
+.footer__coltitle {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8B8B90;
+  margin-bottom: 1.1rem;
+}
+.footer__col a {
+  display: block;
+  padding: 6px 0;
+  color: #ADADB2;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.footer__col a:hover { color: #fff; }
+.footer__base {
+  margin-top: clamp(40px, 6vw, 76px);
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7E7869;
+  font-size: 0.82rem;
+}
+.footer__mono { font-family: var(--f-mono); letter-spacing: 0.1em; }
+@media (max-width: 860px) {
+  /* roomier rows so stacked links are comfortable to tap */
+  .footer__col a { padding: 10px 0; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+  .footer__brand { grid-column: 1 / -1; }
+  .footer__base { flex-direction: column; gap: 10px; text-align: center; }
+}
+
+/* social */
+.footer__social { display: flex; gap: 10px; margin-top: 1.6rem; }
+.footer__soc {
+  width: 40px; height: 40px; border-radius: 11px;
+  display: grid; place-items: center;
+  color: #EDEDEE; background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: background .25s, border-color .25s, transform .25s;
+}
+.footer__soc:hover { background: #fff; color: #0B0B0D; border-color: #fff; transform: translateY(-2px); }

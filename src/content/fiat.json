@@ -1,0 +1,337 @@
+{
+ "regions": [
+  {
+   "name": "Africa",
+   "items": [
+    {
+     "country": "Botswana",
+     "code": "BWP"
+    },
+    {
+     "country": "Cameroon",
+     "code": "XAF"
+    },
+    {
+     "country": "Ghana",
+     "code": "GHS"
+    },
+    {
+     "country": "Kenya",
+     "code": "KES"
+    },
+    {
+     "country": "Malawi",
+     "code": "MWK"
+    },
+    {
+     "country": "Mayotte",
+     "code": "EUR"
+    },
+    {
+     "country": "Nigeria",
+     "code": "NGN"
+    },
+    {
+     "country": "Réunion",
+     "code": ""
+    },
+    {
+     "country": "Rwanda",
+     "code": "RWF"
+    },
+    {
+     "country": "Senegal",
+     "code": "XOF"
+    },
+    {
+     "country": "South Africa",
+     "code": "ZAR"
+    },
+    {
+     "country": "Tanzania",
+     "code": "TZS"
+    },
+    {
+     "country": "Uganda",
+     "code": "UGX"
+    },
+    {
+     "country": "Zambia",
+     "code": "ZMW"
+    }
+   ]
+  },
+  {
+   "name": "America",
+   "items": [
+    {
+     "country": "Argentina",
+     "code": "ARS"
+    },
+    {
+     "country": "Brazil",
+     "code": "BRL"
+    },
+    {
+     "country": "Canada",
+     "code": "CAD"
+    },
+    {
+     "country": "Chile",
+     "code": "CLP"
+    },
+    {
+     "country": "Colombia",
+     "code": "COP"
+    },
+    {
+     "country": "Costa Rica",
+     "code": "CRC"
+    },
+    {
+     "country": "French Guiana",
+     "code": ""
+    },
+    {
+     "country": "Guatemala",
+     "code": "GTQ"
+    },
+    {
+     "country": "Martinique",
+     "code": ""
+    },
+    {
+     "country": "Mexico",
+     "code": "MXN"
+    },
+    {
+     "country": "Panama",
+     "code": "PAB / USD"
+    },
+    {
+     "country": "Peru",
+     "code": "PEN"
+    },
+    {
+     "country": "Saint Martin",
+     "code": ""
+    },
+    {
+     "country": "United States of America",
+     "code": "USD"
+    }
+   ]
+  },
+  {
+   "name": "Asia",
+   "items": [
+    {
+     "country": "Bangladesh",
+     "code": "BDT"
+    },
+    {
+     "country": "Hong Kong, China",
+     "code": "HKD"
+    },
+    {
+     "country": "India",
+     "code": "INR"
+    },
+    {
+     "country": "Indonesia",
+     "code": "IDR"
+    },
+    {
+     "country": "Japan",
+     "code": "JPY"
+    },
+    {
+     "country": "Malaysia",
+     "code": "MYR"
+    },
+    {
+     "country": "Pakistan",
+     "code": "PKR"
+    },
+    {
+     "country": "Philippines",
+     "code": "PHP"
+    },
+    {
+     "country": "Singapore",
+     "code": "SGD"
+    },
+    {
+     "country": "South Korea",
+     "code": "KRW"
+    },
+    {
+     "country": "Thailand",
+     "code": "THB"
+    }
+   ]
+  },
+  {
+   "name": "EU",
+   "items": [
+    {
+     "country": "Europe",
+     "code": ""
+    },
+    {
+     "country": "Aland Islands",
+     "code": ""
+    },
+    {
+     "country": "Andorra",
+     "code": ""
+    },
+    {
+     "country": "Austria",
+     "code": ""
+    },
+    {
+     "country": "Belgium",
+     "code": ""
+    },
+    {
+     "country": "Bulgaria",
+     "code": "BGN"
+    },
+    {
+     "country": "Croatia",
+     "code": ""
+    },
+    {
+     "country": "Cyprus",
+     "code": ""
+    },
+    {
+     "country": "Czech Republic",
+     "code": "CZK"
+    },
+    {
+     "country": "Denmark",
+     "code": "DKK"
+    },
+    {
+     "country": "Estonia",
+     "code": ""
+    },
+    {
+     "country": "Finland",
+     "code": ""
+    },
+    {
+     "country": "France",
+     "code": ""
+    },
+    {
+     "country": "Germany",
+     "code": ""
+    },
+    {
+     "country": "Gibraltar",
+     "code": "GIP"
+    },
+    {
+     "country": "Greece",
+     "code": ""
+    },
+    {
+     "country": "Hungary",
+     "code": "HUF"
+    },
+    {
+     "country": "Iceland",
+     "code": "ISK"
+    },
+    {
+     "country": "Italy",
+     "code": ""
+    },
+    {
+     "country": "Latvia",
+     "code": ""
+    },
+    {
+     "country": "Liechtenstein",
+     "code": "CHF"
+    },
+    {
+     "country": "Lithuania",
+     "code": ""
+    },
+    {
+     "country": "Luxembourg",
+     "code": ""
+    },
+    {
+     "country": "Malta",
+     "code": ""
+    },
+    {
+     "country": "Monaco",
+     "code": ""
+    },
+    {
+     "country": "Netherlands",
+     "code": ""
+    },
+    {
+     "country": "Norway",
+     "code": "NOK"
+    },
+    {
+     "country": "Poland",
+     "code": "PLN"
+    },
+    {
+     "country": "Portugal",
+     "code": ""
+    },
+    {
+     "country": "Republic of Ireland",
+     "code": ""
+    },
+    {
+     "country": "Romania",
+     "code": "RON"
+    },
+    {
+     "country": "Slovakia",
+     "code": ""
+    },
+    {
+     "country": "Slovenia",
+     "code": ""
+    },
+    {
+     "country": "Spain",
+     "code": ""
+    },
+    {
+     "country": "Sweden",
+     "code": "SEK"
+    },
+    {
+     "country": "Switzerland",
+     "code": ""
+    },
+    {
+     "country": "United Kingdom",
+     "code": "GBP"
+    }
+   ]
+  },
+  {
+   "name": "Oceania",
+   "items": [
+    {
+     "country": "Australia",
+     "code": "AUD"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+/* scrolling partner ribbon — sits over the bottom of the hero */
+.pm {
+  overflow: hidden;
+  padding: clamp(14px, 2vw, 22px) 0 clamp(20px, 3vw, 34px);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.pm--dark { background: none; }
+.pm--light { background: var(--ivory); border-block: 1px solid var(--hairline); }
+
+.pm__track {
+  display: flex; align-items: center; width: max-content;
+  animation: pmScroll 42s linear infinite;
+}
+
+.pm__item {
+  flex: none; display: grid; place-items: center;
+  padding: 0 clamp(24px, 3.4vw, 56px);
+}
+.pm__item img {
+  height: clamp(22px, 2.3vw, 30px); width: auto; max-width: 190px;
+  object-fit: contain; display: block;
+}
+/* on the dark hero the marks read as white; colour returns on hover */
+.pm--dark .pm__item img {
+  filter: brightness(0) invert(1) drop-shadow(0 1px 10px rgba(0,0,0,0.55));
+  opacity: 0.8;
+}
+.pm--light .pm__item img { filter: grayscale(1); opacity: 0.55; }
+
+@keyframes pmScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .pm__track { animation: none; } }

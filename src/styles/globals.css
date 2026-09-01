@@ -1,0 +1,126 @@
+/* ============================================================
+   AlloyX / AXG — design tokens & base
+   Light editorial · molten gold + glass · engineered precision
+   ============================================================ */
+:root {
+  /* palette (sampled from the alloy journey film) */
+  --ivory:      #FFFFFF;   /* pure white ground */
+  --porcelain:  #F6F6F5;   /* faint neutral panel */
+  --sand:       #F0F0EF;   /* subtle section shade */
+  --ink:        #16161A;   /* neutral near-black text */
+  --graphite:   #6B6B70;   /* neutral muted text */
+  --hairline:   #E8E8E6;   /* borders / rules */
+
+  /* accent — Ondo periwinkle blue (#677FE3). --gold-* kept as names so all
+     existing usages recolor through these tokens. */
+  --gold-1:     #677FE3;   /* accent main */
+  --gold-2:     #4A5FCE;   /* accent deep (borders / hover) */
+  --gold-ink:   #3B4EB8;   /* accent text on light bg */
+  --accent-soft:#C1CBF2;   /* accent on dark */
+  --grad-gold:  linear-gradient(105deg, #8195EC 0%, #677FE3 50%, #4E63C8 100%);
+
+  /* type — themeable via data-font (default: grotesk) */
+  --f-display: "Manrope", "Inter Tight", system-ui, sans-serif;
+  --f-body:    "Manrope", "Inter", system-ui, -apple-system, sans-serif;
+  --f-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  /* scale */
+  --step--1: clamp(0.78rem, 0.75rem + 0.15vw, 0.86rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.12rem);
+  --step-1:  clamp(1.3rem, 1.2rem + 0.5vw, 1.6rem);
+  --step-2:  clamp(1.9rem, 1.6rem + 1.4vw, 2.8rem);
+  --step-3:  clamp(2.6rem, 2rem + 3vw, 4.4rem);
+  --step-4:  clamp(3.4rem, 2.3rem + 5.4vw, 7rem);
+
+  --maxw: 1240px;
+  --gutter: clamp(20px, 5vw, 68px);
+  --radius: 16px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+html, body { background: var(--ivory); }
+body {
+  font-family: var(--f-body);
+  color: var(--ink);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+a { color: inherit; text-decoration: none; }
+img, canvas, video { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+::selection { background: var(--gold-1); color: #fff; }
+
+h1, h2, h3, h4 { font-family: var(--f-display); font-weight: 700; line-height: 1.02; letter-spacing: -0.02em; }
+
+/* utilities */
+.wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: var(--step--1);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+}
+.eyebrow::before {
+  content: "";
+  width: 26px; height: 1px;
+  background: var(--graphite);
+  display: inline-block;
+}
+.text-gold {
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.muted { color: var(--graphite); }
+
+/* buttons — compact, crisp, tastefully rounded (not pill blobs) */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45em;
+  font-family: var(--f-display); font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  padding: 0.7rem 1.1rem;
+  border-radius: 8px;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.3s, filter 0.3s, border-color 0.3s;
+  will-change: transform;
+}
+.btn svg { width: 15px; height: 15px; }
+/* primary — solid black (Ondo dark button) */
+.btn-gold {
+  background: var(--ink);
+  color: #fff;
+  box-shadow: 0 6px 16px -10px rgba(0,0,0,0.5);
+}
+.btn-gold:hover { transform: translateY(-1px); background: #000; }
+.btn-gold:active { transform: translateY(0); }
+/* secondary — transparent, black hairline (Ondo outline button) */
+.btn-ghost {
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+}
+.btn-ghost:hover { background: var(--porcelain); transform: translateY(-1px); }
+.btn:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  html { scroll-behavior: auto; }
+}
+

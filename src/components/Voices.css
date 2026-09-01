@@ -1,0 +1,67 @@
+.voices {
+  position: relative; isolation: isolate; overflow: hidden;
+  background: #0B0B0D; color: #fff;
+  padding: clamp(64px, 11vw, 150px) 0;
+  font-family: "Manrope", system-ui, sans-serif;
+}
+/* cross-fading photo backgrounds (real newsroom imagery) */
+.voices__bg {
+  position: absolute; inset: 0; z-index: -2;
+  background-size: cover; background-position: center;
+  opacity: 0; transform: scale(1.06);
+  transition: opacity 1s ease, transform 8s ease-out;
+}
+.voices__bg.is-on { opacity: 0.5; transform: scale(1); }
+.voices__scrim {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(11,11,13,0.96) 0%, rgba(11,11,13,0.82) 45%, rgba(11,11,13,0.55) 100%),
+    linear-gradient(0deg, rgba(11,11,13,0.9) 0%, rgba(11,11,13,0.2) 60%);
+}
+
+.voices .wrapx { max-width: 1280px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+.voices__inner { max-width: 900px; }
+
+.voices__eyebrow {
+  font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.55); display: block; margin-bottom: 1.6rem;
+}
+.voices__quote {
+  margin: 0; font-weight: 500;
+  font-size: clamp(1.25rem, 0.95rem + 1.5vw, 2.2rem);
+  line-height: 1.34; letter-spacing: -0.02em; color: #fff;
+  animation: quoteIn .55s cubic-bezier(.22,1,.36,1);
+  text-wrap: pretty;
+}
+@keyframes quoteIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+.voices__foot {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 20px; flex-wrap: wrap; margin-top: clamp(24px, 3vw, 40px);
+}
+.voices__who { display: flex; flex-direction: column; gap: 3px; }
+.voices__name { font-weight: 600; font-size: 16px; }
+.voices__role { font-size: 14px; color: rgba(255,255,255,0.55); }
+.voices__link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13.5px; font-weight: 600; color: #fff;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 100px; padding: 9px 16px;
+  transition: background .25s, gap .25s;
+}
+.voices__link:hover { background: rgba(255,255,255,0.2); gap: 9px; }
+
+.voices__dots { display: flex; gap: 2px; margin-left: -12px; margin-top: clamp(26px, 3.5vw, 44px); }
+.voices__dot {
+  width: 44px; height: 44px; padding: 0; border: none; cursor: pointer;
+  background: none; display: grid; align-items: center;   /* 44px hit area */
+}
+.voices__dot::before {
+  content: ""; display: block; width: 30px; height: 3px; border-radius: 100px;
+  background: rgba(255,255,255,0.22); transition: background .3s;
+}
+.voices__dot.is-on::before { background: #fff; }
+
+@media (max-width: 700px) {
+  .voices__foot { align-items: flex-start; flex-direction: column; }
+}

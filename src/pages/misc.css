@@ -1,0 +1,20 @@
+.fiat { padding-block: clamp(30px, 4vw, 56px); }
+.fiat__head { margin-bottom: 1.6rem; }
+.fiat__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1px;
+  background: var(--hairline);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.fiat__cell {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  padding: 14px 18px;
+  background: var(--ivory);
+  transition: background 0.25s;
+}
+.fiat__cell:hover { background: var(--porcelain); }
+.fiat__country { font-size: var(--step-0); letter-spacing: -0.005em; }
+.fiat__code { font-family: var(--f-mono); font-size: 0.74rem; color: var(--gold-2); letter-spacing: 0.06em; flex: none; }

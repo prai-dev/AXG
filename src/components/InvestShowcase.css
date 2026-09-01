@@ -1,0 +1,83 @@
+.inv {
+  --v-ink:#0B0B0D; --v-muted:#6C6C70; --v-line:#EAEAE7; --v-ground:#F3F3F1;
+  background: var(--ivory);
+  padding: clamp(56px, 9vw, 130px) 0;
+  font-family: "Manrope", system-ui, sans-serif;
+}
+.inv .wrapx { max-width: 1280px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+.inv__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+
+/* ---- licence board ---- */
+.inv__board {
+  background: #0B0B0D; color: #fff; border-radius: 22px;
+  padding: clamp(22px, 2.8vw, 34px);
+}
+.inv__boardhead { display: flex; align-items: center; gap: 14px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.inv__seal {
+  width: 46px; height: 46px; flex: none; border-radius: 13px;
+  background: rgba(255,255,255,0.1); color: #fff; display: grid; place-items: center;
+}
+.inv__boardtitle { display: block; font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
+.inv__boardsub { display: block; margin-top: 3px; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+
+.inv__tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+.inv__tile {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.11);
+  border-radius: 14px; padding: 16px;
+  display: flex; flex-direction: column; gap: 6px;
+  will-change: transform, opacity;
+  transition: background .25s, border-color .25s;
+}
+.inv__tile:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.22); }
+.inv__code { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.3rem, 1rem + 0.9vw, 1.7rem); line-height: 1; }
+.inv__what { font-size: 12.5px; color: rgba(255,255,255,0.58); line-height: 1.4; }
+
+.inv__members { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.inv__member {
+  font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 100px; padding: 6px 11px;
+}
+
+/* ---- copy ---- */
+.inv__eyebrow {
+  font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--v-muted); display: block; margin-bottom: 1.2rem;
+}
+.inv__title {
+  font-weight: 600; font-size: clamp(1.9rem, 1.25rem + 2.6vw, 3.1rem);
+  line-height: 1.07; letter-spacing: -0.03em; color: var(--v-ink); margin: 0;
+}
+.inv__dek { margin: 1.1rem 0 0; font-size: clamp(1rem, 0.95rem + 0.25vw, 1.1rem); line-height: 1.55; color: var(--v-muted); max-width: 46ch; }
+
+.inv__scion { margin-top: clamp(22px, 3vw, 32px); padding-top: 20px; border-top: 1px solid var(--v-line); }
+.inv__scionlabel {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--v-muted);
+}
+.inv__scion ul { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.inv__scion li {
+  position: relative; padding-left: 18px;
+  font-size: 14.5px; line-height: 1.45; color: var(--v-ink);
+}
+.inv__scion li::before {
+  content: ""; position: absolute; left: 0; top: 0.55em;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--v-ink);
+}
+
+.inv__cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: clamp(24px, 3vw, 34px); }
+.inv__btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-weight: 600; font-size: 14.5px; padding: 12px 18px; border-radius: 10px;
+  transition: transform .3s var(--ease), background .3s, border-color .3s;
+}
+.inv__btn--solid { background: var(--v-ink); color: #fff; }
+.inv__btn--solid:hover { transform: translateY(-1px); background: #000; }
+.inv__btn--ghost { border: 1px solid var(--v-ink); color: var(--v-ink); }
+.inv__btn--ghost:hover { background: var(--v-ground); }
+
+@media (max-width: 900px) {
+  .inv__grid { grid-template-columns: 1fr; gap: 32px; }
+  .inv__board { order: 2; }
+}

@@ -1,0 +1,127 @@
+.latest {
+  --l-ink:#0B0B0D; --l-grey:#F0F0F0;
+  --ease-rail: cubic-bezier(.22,1,.36,1);
+  --dur-rail: .62s;
+  background: var(--ivory);
+  padding: clamp(48px, 7vw, 96px) 0 clamp(56px, 8vw, 104px);
+  font-family: "Manrope", system-ui, sans-serif;
+  overflow: hidden;
+}
+.latest .wrapx { max-width: 1440px; margin: 0 auto; padding: 0 44px; }
+
+.latest__title {
+  font-weight: 600; font-size: clamp(1.9rem, 1.1rem + 2.6vw, 3rem);
+  line-height: 1.05; letter-spacing: -0.03em; color: var(--l-ink);
+  margin: 0 0 clamp(28px, 4vw, 52px); text-align: center;
+}
+.latest__title span { color: #9B9B9F; }
+
+/* ---- horizontal rail: the open card shrinks to a column, the next one opens ---- */
+/* width == exactly one column + card + one column, so the clip edges land on
+   the columns and no extra slivers can peek in */
+.latest__viewport {
+  width: min(1352px, calc(100% - 88px)); margin-inline: auto; padding: 0;
+  overflow: hidden;
+}
+.latest__track.is-instant, .latest__track.is-instant .slot, .latest__track.is-instant .slot__inner { transition: none; }
+.latest__track {
+  display: flex; gap: 8px; width: max-content;
+  transition: transform var(--dur-rail) var(--ease-rail);
+  will-change: transform;
+}
+
+.slot {
+  flex: none; height: 395px; overflow: hidden;
+  background: var(--l-grey); border-radius: 16px;
+  transition: width var(--dur-rail) var(--ease-rail), background var(--dur-rail) var(--ease-rail);
+  cursor: pointer;
+}
+.slot:not(.is-active):hover { background: #E6E6E4; }
+.slot.is-active { background: #2B2B2E; cursor: default; }
+
+/* inner keeps the full card width so content never reflows while the slot animates */
+.slot__inner {
+  position: relative; height: 100%;
+  display: grid; grid-template-columns: 47% 1fr; gap: 16px;
+  padding: 24px 36px 24px 24px;
+  opacity: 0; transition: opacity .34s ease .06s;
+}
+.slot.is-active .slot__inner { opacity: 1; }
+
+.ncard__media { border-radius: 16px; overflow: hidden; background: #111114; }
+.ncard__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* external press: no third-party imagery — the outlet's name carries the card */
+.ncard__media--press {
+  display: grid; place-items: center; align-content: center; gap: 12px;
+  padding: 0 8%;
+  background: radial-gradient(120% 130% at 25% 15%, #23232A 0%, #131317 60%, #0D0D10 100%);
+  text-align: center;
+}
+/* the fact the story turns on, under the headline figure */
+.ncard__panellabel {
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(10px, 0.35rem + 0.5vw, 12px);
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+/* milestone artwork, pulled into the site's monochrome register like the press cards */
+.ncard__media--mono img {
+  filter: grayscale(1) contrast(1.06) brightness(1.02);
+}
+.ncard__outlet {
+  font-weight: 700; letter-spacing: -0.02em; color: #fff;
+  font-size: clamp(1.6rem, 1rem + 2.2vw, 3rem);
+  opacity: .92;
+}
+
+.ncard__body { display: flex; flex-direction: column; padding: 5px 0 11px; min-width: 0; }
+.ncard__meta { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; }
+.ncard__cat { color: rgba(255,255,255,0.8); }
+.ncard__dot { color: rgba(255,255,255,0.35); }
+.ncard__date { color: rgba(255,255,255,0.55); }
+.ncard__title {
+  color: #fff; font-weight: 600; letter-spacing: -0.02em;
+  font-size: clamp(1.3rem, 0.95rem + 1.3vw, 2rem); line-height: 1.22; margin: 14px 0 0;
+}
+.ncard__desc {
+  color: rgba(255,255,255,0.62); line-height: 1.55; font-size: 14.5px; margin: 14px 0 0;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+.ncard__more {
+  align-self: flex-start; margin-top: auto;
+  background: rgba(255,255,255,0.14); color: #fff;
+  padding: 8px 15px; border-radius: 8px; font-size: 13.5px; font-weight: 600;
+  transition: background .2s;
+}
+.ncard__more:hover { background: rgba(255,255,255,0.24); }
+
+/* auto-advance ring — same 6s linear fill as the reference */
+.ncard__ring { position: absolute; top: 24px; right: 24px; transform: rotate(-90deg); }
+.progress-circle { animation: progress-fill 6s linear; }
+@keyframes progress-fill { 0% { stroke-dashoffset: 32.9867; } 100% { stroke-dashoffset: 0; } }
+.slot.is-active:hover .progress-circle { animation-play-state: paused; }
+
+.latest__sr {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .latest__track, .slot, .slot__inner { transition: none; }
+  .progress-circle { animation: none; }
+}
+
+/* ---- mobile: one card, neighbours become slim bars ---- */
+@media (max-width: 768px) {
+  .latest .wrapx { padding: 0 16px; }
+  .latest__viewport { width: calc(100% - 32px); }
+  .latest__title { text-align: left; }
+  .slot { height: auto; min-height: 320px; }
+  .slot__inner { grid-template-columns: 1fr; padding: 14px; gap: 0; }
+  .ncard__media { aspect-ratio: 16 / 10; }
+  .ncard__body { padding: 16px 6px 6px; }
+  .ncard__desc { display: none; }
+  .ncard__more { margin-top: 18px; }
+  .ncard__ring { top: 26px; right: 26px; }
+}

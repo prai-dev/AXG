@@ -1,0 +1,156 @@
+.pay {
+  position: relative; overflow: hidden;
+  background: #0B0B0D; color: #fff;
+  padding: clamp(56px, 9vw, 130px) 0 clamp(64px, 9vw, 120px);
+  font-family: "Manrope", system-ui, sans-serif;
+}
+.pay .wrapx { max-width: 1280px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+.pay__glow {
+  position: absolute; top: -10%; right: -5%; width: min(760px, 80vw); height: 620px;
+  background: radial-gradient(closest-side, rgba(103,127,227,0.24), rgba(103,127,227,0) 70%);
+  pointer-events: none;
+}
+
+.pay__grid {
+  position: relative;
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+
+.pay__eyebrow {
+  font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5); display: block; margin-bottom: 1.2rem;
+}
+.pay__title {
+  font-weight: 600; font-size: clamp(2rem, 1.3rem + 2.8vw, 3.4rem);
+  line-height: 1.06; letter-spacing: -0.03em; margin: 0;
+}
+.pay__dek { margin: 1.1rem 0 0; font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem); line-height: 1.55; color: rgba(255,255,255,0.65); max-width: 42ch; }
+
+.pay__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.8rem; }
+.pay__chip {
+  font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 500;
+  color: rgba(255,255,255,0.78); background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 100px; padding: 6px 12px;
+}
+.pay__chip--soft { color: rgba(255,255,255,0.55); }
+
+.pay__wallets { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 1.2rem; }
+.pay__wallet { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.42); }
+
+.pay__cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 2rem; }
+.pay__btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-weight: 600; font-size: 14.5px; padding: 12px 20px; border-radius: 10px;
+  transition: transform .3s var(--ease), background .3s, border-color .3s;
+}
+.pay__btn--solid { background: #fff; color: #0B0B0D; }
+.pay__btn--solid:hover { transform: translateY(-1px); }
+.pay__btn--ghost { border: 1px solid rgba(255,255,255,0.28); color: #fff; }
+.pay__btn--ghost:hover { border-color: rgba(255,255,255,0.65); }
+
+/* ---------- card stack ---------- */
+.pay__stack {
+  position: relative; height: clamp(320px, 34vw, 430px);
+  perspective: 1600px;                          /* perspective only on the container */
+}
+.paycard {
+  position: absolute; left: 50%; top: 50%;
+  width: min(370px, 76%); aspect-ratio: 1.586 / 1;   /* ISO card ratio */
+  border-radius: 18px; padding: 22px;
+  display: flex; flex-direction: column;
+  will-change: transform;                      /* flat card, tilts as one plane */
+  transition: transform .5s cubic-bezier(.22,1,.36,1);
+  box-shadow: 0 40px 80px -34px rgba(0,0,0,0.8);
+  translate: -50% -50%;
+  backface-visibility: hidden;
+}
+.paycard__sheen {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(115deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 62%, rgba(255,255,255,0.10) 100%);
+}
+.paycard--metal {
+  background:
+    radial-gradient(120% 140% at 15% 10%, #3A3A40 0%, #17171A 55%, #0C0C0F 100%);
+  border: 1px solid rgba(255,255,255,0.14);
+  z-index: 2;
+}
+.paycard--virtual {
+  background: linear-gradient(150deg, #4E5DA8 0%, #2A2F55 55%, #14141C 100%);
+  border: 1px solid rgba(255,255,255,0.18);
+  z-index: 1;
+  left: 34%; top: 28%;                        /* sits clearly behind & above, no intersection */
+}
+.paycard__kind {
+  font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.62);
+}
+.paycard__chip {
+  width: 42px; height: 32px; border-radius: 7px; margin-top: 20px;
+  background: linear-gradient(135deg, #E8D9A8 0%, #C6AE72 45%, #F2E7C4 70%, #B99F62 100%);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.18);
+  position: relative;
+}
+.paycard__chip::after {
+  content: ""; position: absolute; inset: 6px 8px;
+  border: 1px solid rgba(0,0,0,0.22); border-radius: 3px;
+}
+.paycard__no {
+  margin-top: auto; font-family: "JetBrains Mono", monospace;
+  font-size: clamp(13px, 1.1vw, 15px); letter-spacing: 0.08em; color: rgba(255,255,255,0.9);
+}
+.paycard__foot { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 12px; }
+.paycard__label { font-size: 11px; color: rgba(255,255,255,0.45); }
+.paycard__brand {
+  font-weight: 800; font-size: 17px; letter-spacing: 0.06em; color: #fff; margin-top: 12px;
+  align-self: flex-end;
+}
+.paycard--metal .paycard__brand { margin-top: 0; }
+
+/* floating badges */
+.paybadge {
+  position: absolute; z-index: 3;
+  font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 100px; padding: 7px 13px; backdrop-filter: blur(8px);
+  white-space: nowrap;
+}
+.paybadge--a { top: 6%; right: 2%; }
+.paybadge--b { bottom: 8%; left: 0%; }
+
+/* ---------- rails ---------- */
+/* .pay .wrapx sets margin/padding shorthands — match its specificity to win */
+.pay .pay__rails {
+  position: relative;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+  margin: clamp(56px, 7vw, 92px) auto 0;
+  padding: 0 clamp(16px, 4vw, 40px);
+}
+.pay__rail {
+  display: flex; flex-direction: column; gap: 14px;
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: clamp(20px, 2.2vw, 28px);
+  transition: background .3s, border-color .3s, transform .3s var(--ease);
+}
+.pay__rail:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); transform: translateY(-3px); }
+.pay__railico {
+  width: 44px; height: 44px; flex: none; border-radius: 12px;
+  background: rgba(255,255,255,0.1); color: #fff; display: grid; place-items: center;
+}
+.pay__rail h3 { font-size: 16.5px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 8px; }
+.pay__rail p { font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.6); margin: 0; }
+
+@media (max-width: 900px) {
+  .pay__grid { grid-template-columns: 1fr; gap: 36px; }
+  .pay__stack { height: clamp(280px, 62vw, 360px); }
+  .paycard { width: min(300px, 76%); }
+  /* keep both cards fully inside the screen on phones */
+  .paycard--virtual { left: 45%; top: 26%; }
+  .paycard--metal { left: 55%; top: 62%; }
+  .pay .pay__rails { grid-template-columns: 1fr; gap: 12px; }
+  .paybadge--a { right: 0; }
+  .paybadge--b { left: 2%; }
+}

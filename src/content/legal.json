@@ -1,0 +1,572 @@
+{
+ "privacypolicy": {
+  "title": "Privacy Policy",
+  "body": [
+   {
+    "t": "p",
+    "x": "Welcome to AlloyX Limited (“AlloyX, “we,” “us,” or “our”). Please read this Privacy Policy carefully."
+   },
+   {
+    "t": "h",
+    "x": "1. Information Collection"
+   },
+   {
+    "t": "p",
+    "x": "AlloyX collects personal information provided during registration, such as name, email, and contact details, as well as information generated through service use, including transaction data."
+   },
+   {
+    "t": "h",
+    "x": "2. Information Usage"
+   },
+   {
+    "t": "p",
+    "x": "Collected information is used to provide, improve, and customize AlloyX services, ensure security, and comply with legal obligations."
+   },
+   {
+    "t": "h",
+    "x": "3. Information Sharing"
+   },
+   {
+    "t": "p",
+    "x": "AlloyX may share user information with third-party providers, affiliates, or legal authorities as required by law or in cases of suspected illegal activity."
+   },
+   {
+    "t": "h",
+    "x": "4. Data Security"
+   },
+   {
+    "t": "p",
+    "x": "AlloyX employs industry-standard security measures to protect user information, including encryption, secure storage, and access control. However, AlloyX cannot guarantee the absolute security of information."
+   },
+   {
+    "t": "h",
+    "x": "5. User Rights"
+   },
+   {
+    "t": "p",
+    "x": "Users have the right to access, correct, or delete their personal information, subject to AlloyX’s legal obligations. Requests for data modification or deletion can be made by contacting AlloyX support."
+   },
+   {
+    "t": "h",
+    "x": "6. Cookie Policy"
+   },
+   {
+    "t": "p",
+    "x": "AlloyX uses cookies and similar technologies to enhance user experience, analyze usage, and provide tailored services. Users may control cookie settings through their browser."
+   }
+  ]
+ },
+ "privacypolicy-hk": {
+  "title": "Privacy Policy (HK)",
+  "body": [
+   {
+    "t": "h",
+    "x": "Privacy Notice For Clients – Hong Kong"
+   },
+   {
+    "t": "h",
+    "x": "DATA PROTECTION UNDER THE PERSONAL DATA (PRIVACY) ORDINANCE"
+   },
+   {
+    "t": "p",
+    "x": "To operate our business, AlloyX (HK) Limited processes information about individuals (“Personal Data”), including information about our current and former clients (“you”)."
+   },
+   {
+    "t": "p",
+    "x": "AlloyX (HK) Limited is committed to protecting your privacy. This Privacy Notice (“Notice”) explains what Personal Data AlloyX (HK) Limited entities in Hong Kong, as referred to in Section 10 (“AlloyX (HK) Limited”, “we”, “our”, or “us”), and other companies within our group collect, how we use that information, and what rights you have."
+   },
+   {
+    "t": "p",
+    "x": "As part of our commitment to safeguarding your Personal Data, we aim to inform you transparently:"
+   },
+   {
+    "t": "p",
+    "x": "why and how AlloyX (HK) Limited collects, uses, and stores your Personal Data; and what your rights are regarding such processing and how you can exercise them."
+   },
+   {
+    "t": "p",
+    "x": "1. What does this Notice cover?"
+   },
+   {
+    "t": "p",
+    "x": "This Notice applies to any and all forms of use (\"processing\") of Personal Data by us in Hong Kong if you are a former, current or prospective client of any of the AlloyX (HK) Limited entities listed in Section 10."
+   },
+   {
+    "t": "p",
+    "x": "2. What types of Personal Data do we collect?"
+   },
+   {
+    "t": "p",
+    "x": "For prospective clients with whom we have not yet made contact, we may collect (to the extent permitted by applicable law):"
+   },
+   {
+    "t": "p",
+    "x": "Personal identification details (such as name, address, gender, nationality), contact information (such as telephone, e-mail address), and family details (such as marital status) Information related to the professional profile (such as directorship/positions and professional networks) and information related to company ownership and financial background For former and current clients or prospective clients with whom we are taking steps to enter into a contractual relationship, we collect (to the extent permitted by applicable law): "
+   },
+   {
+    "t": "p",
+    "x": "Personal details such as your name, identification number, date of birth, compliance related documents (including a copy of your national identity card or passport), phone number, address and domicile, electronic address, and family details such as the name of your spouse or partner Financial information, including payment and transaction records and information relating to your assets (including fixed properties), financial statements, liabilities, taxes, revenues, earnings and investments (including your investment objectives)"
+   },
+   {
+    "t": "p",
+    "x": "Tax domicile and other tax-related documents and information"
+   },
+   {
+    "t": "p",
+    "x": "Where relevant, professional information about you, such as your job title and work experience"
+   },
+   {
+    "t": "p",
+    "x": "Your knowledge of and experience in investment matters"
+   },
+   {
+    "t": "p",
+    "x": "Details of our interactions with you and the products and services you use, including electronic interactions across various channels such as e-mails and mobile applications"
+   },
+   {
+    "t": "p",
+    "x": "Any records of phone calls between you and AlloyX (HK) Limited, specifically phone log information such as your phone number, calling-party number, receiving-party number, forwarding numbers, time and date of calls and messages, duration of calls, routing information, and types of calls"
+   },
+   {
+    "t": "p",
+    "x": "Voice recording and communication data"
+   },
+   {
+    "t": "p",
+    "x": "Where relevant, details of your nomination of a mandate"
+   },
+   {
+    "t": "p",
+    "x": "Identifiers we assign to you, such as your client, business relation, partner or account number, including identifiers for accounting purposes"
+   },
+   {
+    "t": "p",
+    "x": "When you access AlloyX (HK) Limited websites or our applications, data transmitted by your browser or device you are using and automatically recorded by our server, including date and time of the access, name of the accessed file as well as the transmitted data volume and the performance of the access, your device, your web browser, browser language and requesting domain, and IP address (additional data will only be recorded via our Website if their disclosure is made voluntarily, e.g., in the course of a registration or request). When you visit an AlloyX (HK) Limited website, that website will contain additional information about how we use your information while you are visiting that website"
+   },
+   {
+    "t": "p",
+    "x": "In some cases, where permitted by law, your biometric information, political opinions or affiliations, health information, racial or ethnic origin We may use cookies, tracking technologies and other means (e.g., web beacons, pixels, gifs, tags, unique identifiers) to collect and process the above information from different channels, including email, and devices that you use to interact with us."
+   },
+   {
+    "t": "p",
+    "x": "For our usage of cookies and other tracking technologies in relation to AlloyX (HK) Limited websites, please refer to the AlloyX (HK) Limited Website Usage and Cookie Notice available here."
+   },
+   {
+    "t": "p",
+    "x": "We may use Personal Data for analytics and measurement (including machine learning) to process the above information, including profiling based on the processing of your Personal Data, for instance by looking at information we obtain via cookies and tracking technologies."
+   },
+   {
+    "t": "p",
+    "x": "In some cases, we collect this information from public registers (which, depending on the product or service you receive and the country of the AlloyX (HK) Limited entity with which you have a contractual relationship, may include beneficial ownership and other registers), public administration or other third-party or public sources, such as wealth screening services, credit reference agencies, fraud prevention agencies, intermediaries that facilitate data portability, and other group entities."
+   },
+   {
+    "t": "p",
+    "x": "To assess your creditworthiness, we consider credit reports provided by credit reference agencies. For further details and how to contact credit reference agencies for obtaining your credit reports, please contact us through the e-mail addresses outlined in section 7.2."
+   },
+   {
+    "t": "p",
+    "x": "We might also collect certain of the above Personal Data types in relation to your business relationship, such as your additional card holders or account holders, business partners (including other shareholders, or beneficial owners), dependants or family members, representatives or agents."
+   },
+   {
+    "t": "p",
+    "x": "Where you are an institutional or corporate client or investor, we may also collect information about your directors, representatives, employees, shareholders, or beneficial owner. Before providing AlloyX (HK) Limited with this information, you have an obligation in addition to providing a copy of this Notice, to either explicitly or implicitly inform those individuals on or before collecting the data of whether the supply of the data is voluntary or obligatory, and if obligatory, the consequences if the individuals fail to supply it."
+   },
+   {
+    "t": "p",
+    "x": "3. For What Purposes Do We Process Your Personal Data?"
+   },
+   {
+    "t": "p",
+    "x": "We always process your personal data for clearly defined purposes and only use information that is necessary to achieve those objectives."
+   },
+   {
+    "t": "p",
+    "x": "Specifically, within the limits of applicable laws, we process personal data for the following reasons:"
+   },
+   {
+    "t": "p",
+    "x": "a) Client Onboarding:"
+   },
+   {
+    "t": "p",
+    "x": "To confirm your identity and evaluate your application if you request credit services, including assessing the need for guarantees or other forms of security. For legal and regulatory compliance checks (such as anti-money laundering and fraud prevention), please refer to section e) below."
+   },
+   {
+    "t": "p",
+    "x": "b) Client Relationship Management:"
+   },
+   {
+    "t": "p",
+    "x": "To manage our relationship with you, which includes communicating about products and services you receive from us or our business partners, addressing customer service inquiries and complaints, supporting debt collection activities, making decisions related to credit or identity verification, locating your contact details, and closing your account (in line with relevant laws) if it remains inactive and we are unable to reach you after a certain period."
+   },
+   {
+    "t": "p",
+    "x": "To better understand you as a client, including your preferences regarding the products and services you use, as well as other offerings—whether from AlloyX (HK) Limited, its group entities, or our business partners—that may be of interest to you. This may involve profiling based on your personal data, such as analyzing the types of applications, platforms, products, and services you use, information gathered through tracking technologies, and your preferred methods of communication."
+   },
+   {
+    "t": "p",
+    "x": "To gather and analyze both individualized and aggregated data about your activities and potential interests when using our products and services, our websites, mobile applications, platforms, multimedia portals, and social media channels."
+   },
+   {
+    "t": "p",
+    "x": "c) Product Implementation and Service Delivery:"
+   },
+   {
+    "t": "p",
+    "x": "To deliver our products and services effectively, ensuring proper execution by verifying your identity and processing payments to and from your accounts according to your instructions and the applicable product terms."
+   },
+   {
+    "t": "p",
+    "x": "To conduct necessary underwriting procedures."
+   },
+   {
+    "t": "p",
+    "x": "d) Business Development and Brand Enhancement:"
+   },
+   {
+    "t": "p",
+    "x": "To assess opportunities for offering relevant products, services, and events that may benefit you - including offerings from AlloyX (HK) Limited, our group entities, and business partners."
+   },
+   {
+    "t": "p",
+    "x": "To provide personalized or anonymized group-based recommendations through our various channels, including our website, mobile applications, digital platforms, multimedia portals, social networks, and other services you utilize."
+   },
+   {
+    "t": "p",
+    "x": "To reach out to you with targeted marketing communications about products and services we believe would interest you, including offerings from AlloyX (HK) Limited, our group entities, and business partners, as well as to facilitate promotional activities and competitions."
+   },
+   {
+    "t": "p",
+    "x": "e) Compliance, Risk Management, and Crime Prevention, Detection, and Investigation:"
+   },
+   {
+    "t": "p",
+    "x": "To conduct legal and regulatory compliance checks during the onboarding process, including fulfilling anti-money laundering and fraud prevention requirements."
+   },
+   {
+    "t": "p",
+    "x": "To meet ongoing regulatory and compliance obligations (such as financial sector laws, anti-money laundering, and tax regulations), which may involve recording and monitoring communications, assigning risk classifications to business relationships, and making disclosures to tax authorities, financial regulators, and other governmental, judicial, or regulatory bodies, as well as participating in legal proceedings and investigating or preventing criminal activity."
+   },
+   {
+    "t": "p",
+    "x": "To receive and address complaints, requests, or reports submitted by you or third parties to designated units within AlloyX (HK) Limited or its group entities."
+   },
+   {
+    "t": "p",
+    "x": "To respond to any actual or potential legal proceedings, requests, or inquiries from public or judicial authorities."
+   },
+   {
+    "t": "p",
+    "x": "To prevent and detect criminal acts, including fraud, misuse of our products or services, and to ensure the security of our IT systems, infrastructure, and networks."
+   },
+   {
+    "t": "p",
+    "x": "f) Supporting, Enhancing, and Maintaining AlloyX (HK) Limited’s Technology:"
+   },
+   {
+    "t": "p",
+    "x": "To improve our products, services, and technological capabilities, including testing and upgrading systems and processes, as well as conducting market research to identify ways to enhance our current offerings or explore new products and services."
+   },
+   {
+    "t": "p",
+    "x": "To analyze the outcomes of our marketing efforts in order to assess the effectiveness and relevance of our campaigns."
+   },
+   {
+    "t": "p",
+    "x": "g) Other Purposes:"
+   },
+   {
+    "t": "p",
+    "x": " For prudent operational management within AlloyX (HK) Limited and its group entities, including credit and risk management, technology support, reporting, insurance, auditing, training on systems and products, and other administrative functions."
+   },
+   {
+    "t": "p",
+    "x": " To facilitate a transfer, merger, or sale to a potential buyer, transferee, merger partner, or seller and their advisors in connection with an actual or potential transfer, merger, or sale of part or all of AlloyX (HK) Limited’s business, assets, or related rights and interests, or to acquire or merge with another business."
+   },
+   {
+    "t": "p",
+    "x": " To collect information to ensure the security of our premises, the safety of staff and visitors, and the protection of property and information located at or accessible from our facilities. This includes preventing and, if necessary, investigating unauthorized access to secure areas (for example, maintaining building access logs and CCTV footage to prevent, detect, and investigate theft or threats to personnel or assets)."
+   },
+   {
+    "t": "p",
+    "x": " To conduct transactional and statistical analysis, as well as related research."
+   },
+   {
+    "t": "p",
+    "x": " To exercise our responsibilities and/or rights in relation to you or third parties."
+   },
+   {
+    "t": "p",
+    "x": "We utilize both automated tools (including artificial intelligence) and manual processes to handle your personal data for these purposes. Our automated systems are often complemented and validated by human review. For instance, artificial intelligence solutions (such as Microsoft 365 Copilot) may analyze your data to detect patterns and trends, which are then typically reviewed and interpreted by our staff."
+   },
+   {
+    "t": "p",
+    "x": "If the personal data we request from you is necessary to fulfill our legal or regulatory requirements, or to enter into an agreement with you, we may not be able to proceed with onboarding you as a client or providing products or services if you do not provide this information. In such cases, we will notify you accordingly."
+   },
+   {
+    "t": "p",
+    "x": "All employees of AlloyX (HK) Limited who have access to personal data are required to follow our internal policies and procedures to safeguard your information and maintain its confidentiality. AlloyX (HK) Limited and its group entities have also established appropriate technical and organizational measures to protect your personal data from unauthorized, accidental, or unlawful destruction, loss, alteration, misuse, disclosure, or access, as well as from any other unlawful forms of processing."
+   },
+   {
+    "t": "p",
+    "x": "5 Who Has Access to Personal Data and With Whom Is It Shared?"
+   },
+   {
+    "t": "p",
+    "x": "(5.1) Within AlloyX (HK) Limited Group"
+   },
+   {
+    "t": "p",
+    "x": "We typically share personal data with other companies within the AlloyX (HK) Limited group for the purposes described in section"
+   },
+   {
+    "t": "p",
+    "x": "(3.1.) This allows us to maintain a consistently high standard of service across our group and to deliver products and services to you. Other group entities may process your personal data on behalf of, and at the request of, AlloyX (HK) Limited."
+   },
+   {
+    "t": "p",
+    "x": "5.2 External to AlloyX (HK) Limited Group"
+   },
+   {
+    "t": "p",
+    "x": "(5.2.1) Third-Party Partners"
+   },
+   {
+    "t": "p",
+    "x": "We share personal data with other financial institutions, credit service providers, similar organizations, and our professional advisers and consultants to maintain our business relationship with you. Specifically, when delivering products and services, we may share personal data with parties acting on your behalf or otherwise involved in the transaction, including but not limited to:"
+   },
+   {
+    "t": "p",
+    "x": "Parties acquiring interest in or assuming risk related to the transaction (such as insurers)"
+   },
+   {
+    "t": "p",
+    "x": "For credit card holders: credit card associations and other payment platform providers"
+   },
+   {
+    "t": "p",
+    "x": "Securities issuers (including their appointed third parties) in cases where your securities are held by third-party banks"
+   },
+   {
+    "t": "p",
+    "x": "Payment recipients, beneficiaries, account nominees, intermediaries, correspondent and agent banks (including custodian banks)"
+   },
+   {
+    "t": "p",
+    "x": "Clearing houses, settlement systems, and specialized payment institutions such as SWIFT"
+   },
+   {
+    "t": "p",
+    "x": "Market counterparties, withholding agents, swap or trade repositories, and stock exchanges"
+   },
+   {
+    "t": "p",
+    "x": "Other financial institutions, credit reference agencies, or credit bureaus (for credit reference purposes)"
+   },
+   {
+    "t": "p",
+    "x": "Third-party fund managers providing asset management services to you"
+   },
+   {
+    "t": "p",
+    "x": "Introducing brokers to whom we make introductions or referrals"
+   },
+   {
+    "t": "p",
+    "x": "Professional service providers, including lawyers, auditors, accountants, and insurers who provide legal, audit, consultancy, accounting, or insurance services to our organization"
+   },
+   {
+    "t": "p",
+    "x": "5.2.2) Service Providers"
+   },
+   {
+    "t": "p",
+    "x": "We share personal data with our vendors who are bound by confidentiality agreements, including:"
+   },
+   {
+    "t": "p",
+    "x": "IT hardware and software providers"
+   },
+   {
+    "t": "p",
+    "x": "Outsourcing services"
+   },
+   {
+    "t": "p",
+    "x": "Logistics, mail, courier, and printing services"
+   },
+   {
+    "t": "p",
+    "x": "Storage solution providers"
+   },
+   {
+    "t": "p",
+    "x": "Marketing and communications vendors"
+   },
+   {
+    "t": "p",
+    "x": "Facility management companies"
+   },
+   {
+    "t": "p",
+    "x": "Market data service providers"
+   },
+   {
+    "t": "p",
+    "x": "Transportation and travel management services"
+   },
+   {
+    "t": "p",
+    "x": "Other essential service providers"
+   },
+   {
+    "t": "p",
+    "x": "When sharing data with these providers, we implement strict measures to ensure they comply with our data security standards and maintain the security of your personal data."
+   },
+   {
+    "t": "p",
+    "x": "When AlloyX (HK) Limited transfers your data to third-party service providers who process data on our behalf, we require them to meet specific security standards through contractual obligations. These service providers must adhere to a comprehensive list of technical and organizational security measures, regardless of their location, including:"
+   },
+   {
+    "t": "p",
+    "x": "Information security management protocols"
+   },
+   {
+    "t": "p",
+    "x": "Information security risk assessment procedures"
+   },
+   {
+    "t": "p",
+    "x": "Specific information security measures, such as:"
+   },
+   {
+    "t": "p",
+    "x": "Physical security controls"
+   },
+   {
+    "t": "p",
+    "x": "Logical access controls"
+   },
+   {
+    "t": "p",
+    "x": "Protection against malware and hacking"
+   },
+   {
+    "t": "p",
+    "x": "Data encryption protocols"
+   },
+   {
+    "t": "p",
+    "x": "Backup and recovery management systems"
+   },
+   {
+    "t": "p",
+    "x": "(5.2.3) Public or Regulatory Authorities"
+   },
+   {
+    "t": "p",
+    "x": "We may disclose personal data to public authorities, regulatory bodies, government agencies, courts, or parties involved in legal proceedings when required by applicable laws or regulations, codes of practice, upon official request, or to protect our legitimate interests."
+   },
+   {
+    "t": "p",
+    "x": "(5.2.4) Others:"
+   },
+   {
+    "t": "p",
+    "x": "A potential buyer, transferee, merger partner, seller, and their advisors in connection with an actual or potential transfer or merger of part or all of AlloyX (HK) Limited’s business, assets, or related rights and interests, or in the context of acquiring or merging with another business."
+   },
+   {
+    "t": "p",
+    "x": "Any other legitimate recipient as required by applicable laws or regulations."
+   },
+   {
+    "t": "p",
+    "x": "(5.3) Data Transfers to Other Countries"
+   },
+   {
+    "t": "p",
+    "x": "Personal data shared within or outside AlloyX (HK) Limited and its group entities, as described in Sections 5.1 and 5.2, may sometimes be processed in other countries. We only transfer your personal data to countries that provide an adequate level of data protection, or, where such legal protections are not in place, we rely on appropriate safeguards (such as standard contractual clauses recognized by the relevant Data Protection Authority or other legal exemptions) as required by local law."
+   },
+   {
+    "t": "p",
+    "x": "You may request a copy of these safeguards by contacting our Group Data Protection Office. Where required by law, we will implement the necessary legal, operational, and technical measures and/or enter into an agreement with you before transferring your data."
+   },
+   {
+    "t": "p",
+    "x": "A list of the countries where AlloyX (HK) Limited and its group entities operate can be found at www.alloyx.com."
+   },
+   {
+    "t": "p",
+    "x": "6. How Long Do We Store Your Data?"
+   },
+   {
+    "t": "p",
+    "x": "We retain personal data only for as long as necessary to fulfill the purposes for which it was collected or to comply with legal, regulatory, or internal policy requirements. To determine the appropriate retention period, we apply specific criteria based on the intended use of your personal data."
+   },
+   {
+    "t": "p",
+    "x": "We will keep your personal data for the duration of your relationship with us, so we can provide you with services and meet our regulatory obligations as outlined in this policy."
+   },
+   {
+    "t": "p",
+    "x": "After our relationship with you ends (for example, when your account is closed, a transaction is completed, your application for a product is declined, or you choose not to proceed), we will retain your personal data for a suitable period—often up to 10 years after account closure or the relevant transaction. The retention period is typically determined by legal limitation periods, regulatory requirements, or compliance and risk management needs."
+   },
+   {
+    "t": "p",
+    "x": "We may retain your personal data beyond this period if required by law, if there are ongoing claims or complaints, or for regulatory reasons. If we need to keep your information for a longer time, we will continue to safeguard it. However, if you wish to have your personal data removed from our records, you may submit a request as described below, which we will review in accordance with our procedures."
+   },
+   {
+    "t": "p",
+    "x": "7. Your Rights and How to Exercise Them"
+   },
+   {
+    "t": "p",
+    "x": "(7.1) Your Rights"
+   },
+   {
+    "t": "p",
+    "x": "You have the right to:"
+   },
+   {
+    "t": "p",
+    "x": "Access and obtain information about your personal data that we process Request corrections if you believe any information we hold about you is inaccurate or incomplete Opt out of direct marketing communications For direct marketing communications, you can stop receiving them at no cost by:"
+   },
+   {
+    "t": "p",
+    "x": "Clicking the \"unsubscribe\" link in our emails Emailing us at the address provided in Section 7.2 AlloyX (HK) Limited will honor these requests and objections as required by applicable data protection regulations. However, these rights are not absolute and may be subject to certain exemptions. When we receive a request, we typically need to:"
+   },
+   {
+    "t": "p",
+    "x": "Verify your identity Ask for additional information to better understand your request If we cannot comply with your request, we will provide a clear explanation of our reasons."
+   },
+   {
+    "t": "p",
+    "x": "In cases where AlloyX (HK) Limited uses automated decision-making to process your personal data, we will:"
+   },
+   {
+    "t": "p",
+    "x": "Inform you when such automated processing occurs Provide information about the criteria and procedures used Upon request, explain the automated decision-making process Allow you to request human review of decisions that are based solely on automated processing"
+   },
+   {
+    "t": "p",
+    "x": "(7.2)      How to Exercise Your Rights"
+   },
+   {
+    "t": "p",
+    "x": "To exercise any of the rights mentioned above, please email the appropriate address based on your relationship with us:     &bull; For Wealth Management clients: wm.complaints@alloyx.com     &bull; For Investment Banking clients: ib.compliance@alloyx.com     &bull; For Institutional or Corporate clients: am.institutional@alloyx.com     &bull; For Asset Management clients: am.clients@alloyx.com     &bull; For former employees or candidates: hr.data@alloyx.com If you have concerns about how AlloyX (HK) Limited processes your personal data, we welcome the opportunity to discuss and address your concerns. To speak with us about our use of your personal data, please contact our Group Data Protection Office at privacy@alloyx.com."
+   },
+   {
+    "t": "p",
+    "x": "If you are not satisfied with our response, you have the right to file a complaint with the relevant Data Protection Authority. In Hong Kong, you can contact the Privacy Commissioner for Personal Data (PCPD) through their website: https://www.pcpd.org.hk/."
+   },
+   {
+    "t": "p",
+    "x": "8. Changes to your Personal Data We are committed to keeping your Personal Data accurate and up to date. Therefore, if your Personal Data changes, please inform us of the change as soon as possible."
+   },
+   {
+    "t": "p",
+    "x": "9. Updates to this Notice This Notice was updated in April 2025. We reserve the right to amend it from time to time. Any amendment or update to this Notice we will make available to you here. Please visit the AlloyX website frequently to understand the current Notice, as the terms of this Notice are closely related to you."
+   }
+  ]
+ }
+}
